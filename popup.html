@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="popup.css" />
+    <title>Budget Planner</title>    
+</head>
+<body>
+    <h3>Plan your spending</h3>
+    <label class="title">Total Spending:</label>    
+    <label id="totalSpending" class="vals"></label>
+    <br /> <br />
+    <label class="title">Current Limit: </label>
+    <label id="currentLimit" class="vals"></label>
+    <br /> <br />
+    <label class="title">New Amount </label><br />
+    <input type="text" id="newAmount" placeholder="Enter the amount spent" />
+    <br /> <br />
+    <button type="button" id="btnAddAmount">Add Amount</button>
+    <button type="button" id="btnGetAmount">Get from Storage</button>
+    <script src="popup.js"></script>
+</body>
+</html>

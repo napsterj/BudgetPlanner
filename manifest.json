@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Budget Planner",
+    "description": "Keep track of your spendings and expenses.",
+    "version":"1.0",
+    "icons": {
+        "128": "images/icon128.png",
+        "48": "images/icon48.png",
+        "16": "images/icon16.png"        
+    },
+    "action": {
+        "default_icon": "images/icon16.png",
+        "default_popup": "popup.html"
+    },
+    "options_page": "options.html",
+    "permissions": [
+        "notifications",
+        "storage",
+        "contextMenus"
+    ],
+    "background": {
+        "service_worker": "eventPage.js",
+        "type": "module"
+    }    
+}

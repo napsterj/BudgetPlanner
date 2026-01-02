@@ -1,0 +1,32 @@
+body {        
+    max-width: auto;
+    margin-top: 4px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;    
+    margin: auto;
+}
+
+.title {
+    color:royalblue;
+}
+
+.vals {
+    color:chocolate;
+    margin-bottom: 4px;
+}
+
+input {
+    margin-top: 4px;
+    border: 2px thin blue;  
+    height: 20px;
+    width: auto;  
+}
+
+button {
+    margin-top: 4px;    
+    background-color: chartreuse;
+    border: 0px solid lightcoral;
+    max-width:auto;
+    height: 30px;
+}
+
