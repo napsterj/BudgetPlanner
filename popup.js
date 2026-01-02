@@ -3,11 +3,11 @@ let currentLimit = document.getElementById('currentLimit')
 let txtNewAmount = document.getElementById('newAmount')
 const btnAdd = document.getElementById('btnAddAmount')
 
-chrome.storage.sync.get(['totalAmount', 'limit'], function(budget) {      
-    console.log(budget)      
+chrome.storage.sync.get(['totalAmount', 'limit'], function(budget) {          
     totalSpending.textContent = budget.totalAmount
     txtNewAmount.textContent = ""    
     currentLimit.textContent = budget.limit
+    chrome.action.setBadgeText({"text": budget.totalAmount.toString()})
 })
 
 btnAdd.addEventListener('click', function() {        

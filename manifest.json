@@ -12,8 +12,9 @@
         "default_icon": "images/icon16.png",
         "default_popup": "popup.html"
     },
-    "options_page": "options.html",
+    "options_page": "options.html",    
     "permissions": [
+        "tabs",
         "notifications",
         "storage",
         "contextMenus"

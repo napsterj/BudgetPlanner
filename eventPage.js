@@ -13,6 +13,13 @@ function isFloat(value) {
             !isNaN(parseFloat(value))           
 }
 
+chrome.tabs.onUpdated.addListener(function(tabs){
+    chrome.storage.sync.get(["totalAmount"], function(budget) {
+        chrome.action.setBadgeText({"text": budget.totalAmount.toString()})         
+        chrome.action.setBadgeBackgroundColor({"color": "#bf2424"})
+    })
+})
+
 chrome.contextMenus.onClicked.addListener(function(selectedData) {
     if(selectedData.menuItemId === "budgetPlannerId" && 
        selectedData.selectionText) {
